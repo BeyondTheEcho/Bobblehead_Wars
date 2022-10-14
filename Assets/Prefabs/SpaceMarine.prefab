@@ -80,6 +80,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 50
   head: {fileID: 1846391042918993921}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 4096
 --- !u!143 &300152012396167080
 CharacterController:
   m_ObjectHideFlags: 0
