@@ -45,6 +45,7 @@ public class Alien : MonoBehaviour
     public void Die()
     {
         OnDestroy.Invoke();
+        OnDestroy.RemoveAllListeners();
         Destroy(gameObject);
     }
 
