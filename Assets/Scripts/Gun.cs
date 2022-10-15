@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class Gun : MonoBehaviour
 {
+    //Public Vars
     public GameObject bulletPrefab;
     public Transform launchPosition;
+    public bool isUpgraded;
+    public float upgradeTime = 10.0f;
+
+    //Private Vars
     private AudioSource audioSource;
+    private float currentTime;
 
     // Start is called before the first frame update
     void Start()
@@ -19,25 +25,53 @@ public class Gun : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if (!IsInvoking("FireBullet"))
+            if (!IsInvoking("fireBullet"))
             {
-                InvokeRepeating("FireBullet", 0f, 0.1f);
+                InvokeRepeating("fireBullet", 0f, 0.1f);
             }
         }
 
         if (Input.GetMouseButtonUp(0))
         {
-            CancelInvoke("FireBullet");
+            CancelInvoke("fireBullet");
         }
 
     }
 
-    void FireBullet()
+    void fireBullet()
     {
-        GameObject bullet = Instantiate(bulletPrefab);
+        Rigidbody bullet = createBullet();
+        bullet.velocity = transform.parent.forward * 100;
+
+        if (isUpgraded)
+        {
+            Rigidbody bullet2 = createBullet();
+            bullet2.velocity = (transform.right + transform.forward / 0.5f) * 100;
+            Rigidbody bullet3 = createBullet();
+            bullet3.velocity = ((transform.right * -1) + transform.forward / 0.5f) * 100;
+        }
+
+        if (isUpgraded)
+        {
+            audioSource.PlayOneShot(SoundManager.Instance.upgradedGunFire);
+        }
+        else
+        {
+            audioSource.PlayOneShot(SoundManager.Instance.gunFire);
+        }
+    }
+
+    private Rigidbody createBullet()
+    {
+        GameObject bullet = Instantiate(bulletPrefab) as GameObject;
         bullet.transform.position = launchPosition.position;
-        bullet.GetComponent<Rigidbody>().velocity = transform.parent.forward * 100;
-        audioSource.PlayOneShot(SoundManager.Instance.gunFire);
+        return bullet.GetComponent<Rigidbody>();
+    }
+
+    public void UpgradeGun()
+    {
+        isUpgraded = true;
+        currentTime = 0;
     }
 
 }
