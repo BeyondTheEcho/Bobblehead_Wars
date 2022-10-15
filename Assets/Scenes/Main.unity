@@ -529,6 +529,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &402934639 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8388313874535871976, guid: 1b5a78c5866cb324b9d4bdbd6025f88a, type: 3}
+  m_PrefabInstance: {fileID: 1651885609827044748}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd2dc1048b2c298499ef17faf797695e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &403188003
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,6 +712,9 @@ MonoBehaviour:
   minSpawnTime: 1
   maxSpawnTime: 3
   aliensPerSpawn: 1
+  upgradePrefab: {fileID: 105092, guid: 941d6224549424c91b1cf112b44ec0cb, type: 3}
+  gun: {fileID: 402934639}
+  upgradeMaxTimeSpawn: 7.5
 --- !u!4 &568992038
 Transform:
   m_ObjectHideFlags: 0
