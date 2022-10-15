@@ -84,6 +84,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4096
   bodyAnimator: {fileID: 402934641}
+  hitForce:
+  - 0.1
+  - 0.2
+  - 0.3
 --- !u!143 &300152012396167080
 CharacterController:
   m_ObjectHideFlags: 0
@@ -461,22 +465,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8388313874535871976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1886380304113293576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd2dc1048b2c298499ef17faf797695e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 3551765219029602900, guid: 8023e9db0518af04c9c3683b781c5cb8, type: 3}
-  launchPosition: {fileID: 2532489523014208500}
-  isUpgraded: 0
-  upgradeTime: 10
 --- !u!82 &402934642
 AudioSource:
   m_ObjectHideFlags: 0
@@ -486,7 +474,7 @@ AudioSource:
   m_GameObject: {fileID: 1886380304113293576}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 2752178626414426089, guid: ac6749b9ca7f36642833f853cb97070e, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -593,6 +581,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8388313874535871976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886380304113293576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd2dc1048b2c298499ef17faf797695e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 3551765219029602900, guid: 8023e9db0518af04c9c3683b781c5cb8, type: 3}
+  launchPosition: {fileID: 2532489523014208500}
+  isUpgraded: 0
+  upgradeTime: 10
 --- !u!4 &2832978386360618611 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -5639509622783464918, guid: 5ddafc584aa50fe4cb129aa3d712b8be, type: 3}
