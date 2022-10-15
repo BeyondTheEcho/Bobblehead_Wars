@@ -331,7 +331,7 @@ AudioSource:
   m_GameObject: {fileID: 338330581}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -563014921613785425, guid: ac6749b9ca7f36642833f853cb97070e, type: 2}
   m_audioClip: {fileID: 8300000, guid: c913da143d1341c4a8ca22e0717e79a2, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -427,7 +427,7 @@ AudioSource:
   m_GameObject: {fileID: 338330581}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 2710785850644429184, guid: ac6749b9ca7f36642833f853cb97070e, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -1693,6 +1693,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 402934642, guid: 1b5a78c5866cb324b9d4bdbd6025f88a, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 2752178626414426089, guid: ac6749b9ca7f36642833f853cb97070e, type: 2}
     - target: {fileID: 1651885609529460028, guid: 1b5a78c5866cb324b9d4bdbd6025f88a, type: 3}
       propertyPath: m_Name
       value: SpaceMarine
