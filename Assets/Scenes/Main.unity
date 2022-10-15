@@ -1708,10 +1708,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 402934642, guid: 1b5a78c5866cb324b9d4bdbd6025f88a, type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 2752178626414426089, guid: ac6749b9ca7f36642833f853cb97070e, type: 2}
     - target: {fileID: 1651885609529460028, guid: 1b5a78c5866cb324b9d4bdbd6025f88a, type: 3}
       propertyPath: m_Name
       value: SpaceMarine
@@ -1759,22 +1755,6 @@ PrefabInstance:
     - target: {fileID: 1651885609529460029, guid: 1b5a78c5866cb324b9d4bdbd6025f88a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1651885609529460030, guid: 1b5a78c5866cb324b9d4bdbd6025f88a, type: 3}
-      propertyPath: hitForce.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1651885609529460030, guid: 1b5a78c5866cb324b9d4bdbd6025f88a, type: 3}
-      propertyPath: hitForce.Array.data[0]
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1651885609529460030, guid: 1b5a78c5866cb324b9d4bdbd6025f88a, type: 3}
-      propertyPath: hitForce.Array.data[1]
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1651885609529460030, guid: 1b5a78c5866cb324b9d4bdbd6025f88a, type: 3}
-      propertyPath: hitForce.Array.data[2]
-      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b5a78c5866cb324b9d4bdbd6025f88a, type: 3}

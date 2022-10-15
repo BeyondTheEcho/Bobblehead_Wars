@@ -88,6 +88,8 @@ MonoBehaviour:
   - 0.1
   - 0.2
   - 0.3
+  timeBetweenHits: 2.5
+  marineBody: {fileID: 9172004600071449279}
 --- !u!143 &300152012396167080
 CharacterController:
   m_ObjectHideFlags: 0
@@ -597,6 +599,20 @@ MonoBehaviour:
   launchPosition: {fileID: 2532489523014208500}
   isUpgraded: 0
   upgradeTime: 10
+--- !u!136 &2025560685505866656
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886380304113293576}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 2.08
+  m_Height: 0.24
+  m_Direction: 1
+  m_Center: {x: -1.61, y: 3.58, z: 0}
 --- !u!4 &2832978386360618611 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -5639509622783464918, guid: 5ddafc584aa50fe4cb129aa3d712b8be, type: 3}
